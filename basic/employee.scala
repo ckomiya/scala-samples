@@ -6,10 +6,10 @@ class Person(val name: String) {
 class Employee(override val name: String, 
                         val number: Int) extends Person(name) {
   override def talk(message: String) {
-    println(name + " with number " + number + " says " + message)
+    println(name + " con nro " + number + " dice " + message)
   }
   override def id():String = number.toString
 } 
 
-val employee = new Employee("Yoda", 4)
-employee.talk("Extend or extend not. There is no try.")
+val employee = new Employee("Bob", 4)
+employee.talk("Hooola")
